@@ -1,0 +1,153 @@
+focus_tree = {
+	id = soviet_nazbol
+	country = {
+		base = 0
+		modifier = {
+			add = 1
+			tag = SOV
+		}
+	}
+
+	focus = {
+		id = SOV_aftermath
+		icon = GFX_goal_broken_red_star
+		x = 10
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = stabilization_efforts
+				days = 140
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_call_meeting
+		icon = GFX_goal_generic_elections
+		prerequisite = { focus = SOV_aftermath }
+		x = 10
+		y = 1
+		cost = 1
+		completion_reward = {
+			custom_effect_tooltip = SOV_call_meeting_effect
+			hidden_effect = {
+				country_event = {
+					id = nazbol_rise.2
+					days = 14
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_national_bolshevism
+		icon = GFX_goal_red_star_green_wreath
+		prerequisite = { focus = SOV_call_meeting }
+		available = {
+			has_country_flag = meeting_over
+		}
+		x = 10
+		y = 2
+		cost = 1
+		completion_reward = {
+			add_political_power = 75
+			set_party_name = {
+				ideology = communism
+				long_name = SOV_communism_party_nazbol_long
+				name = SOV_communism_party_nazbol
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = SOV_fascism_party_nazbol_long
+				name = SOV_fascism_party_nazbol_long
+			}
+		}
+	}
+	focus = {
+		id = SOV_placate_traditionalists
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = SOV_national_bolshevism }
+		mutually_exclusive = { focus = SOV_placate_reformers }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_placate_traditionalists_require
+
+				check_variable = {
+					var = trad_opinion
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		x = 9
+		y = 3
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_placate_reformers
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = SOV_national_bolshevism }
+		mutually_exclusive = { focus = SOV_placate_traditionalists }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_placate_reformers_require
+				
+				check_variable = {
+					var = reform_opinion
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}	
+		}
+		x = 11
+		y = 3
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	#economic part of tree
+	focus = {
+		id = SOV_industrialisation
+		icon = GFX_goal_unknown
+		available = {
+			always = no
+		}
+		x = 20
+		y = 0
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

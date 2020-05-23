@@ -1,0 +1,11 @@
+﻿l_english:
+ nazbol_rise.1.t:0 "Death of Stalin and Kalinin"
+ nazbol_rise.1.d:0 "Today in Moscow, an unknown gunman opened fire on the Supreme Soviet, killing Stalin and Kalinin. The gunman was followed police to a nearby apartment where he was found dead, killed by his own gun. His motives are not known. The nation now mourns the loss of its great leader and one of his finest supporters."
+ nazbol_rise.1.a:0 "May they rest in peace."
+ nazbol_rise.2.t:0 "The Election"
+ nazbol_rise.2.d:0 "The Supreme Soviet sits in tense silence, as the votes of its members are brought to the stand to be counted by the standing Presidium, a little known politician named Aleksey Tolstoy. After carefully tallying the votes the victor was deccided with the Supreme Soviet staying in silence. Aleksey shouts out to the waiting room.\n\"Nikolay Ustryalov and the Smenovekhovtsy.\"\nThe silence continued as the members filed out of the Kremlin and out onto the streets."
+ nazbol_rise.2.a:0 "A surprise to be sure, but a welcome one."
+ nazbol_rise.2.a_effect:0 "Traditionalist opinion will §Rdecrease§! by 10.\nReformer opinion will §Rdecrease§! by 10."
+ nazbol_choices.1.t:0 "Lack of Traditionalist Support"
+ nazbol_choices.1.d:0 "The Traditionalists have felt that their opinions are not being heard. They have started to plot against our government and it is already starting to show."
+ nazbol_choices.1.a:0 "This is bad."

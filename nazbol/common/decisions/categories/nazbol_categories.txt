@@ -1,0 +1,11 @@
+nazbol_category = {
+	icon = unknown
+	visible = {
+		tag = SOV
+		has_completed_focus = SOV_national_bolshevism
+	}
+	available = {
+		tag = SOV
+		has_completed_focus = SOV_national_bolshevism
+	}
+}

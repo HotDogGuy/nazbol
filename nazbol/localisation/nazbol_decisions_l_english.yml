@@ -1,0 +1,9 @@
+﻿l_english:
+ nazbol_category:0 "National Bolshevism"
+ nazbol_category_desc:0 "Decisions relating to National Bolshevism.\nReformer Opinion = [?reform_opinion|+=0]\nTraditionalist Opinion = [?trad_opinion|+=0]"
+ nazbol_purge_trotskyites:0 "Purge Trotskyites"
+ nazbol_purge_trotskyites_effect:0 "Traditionalists opinion will §Gincrease§! by 10."
+ nazbol_economic_reforms_trad:0 "Continue the 5 Year Plan"
+ nazbol_economic_reforms_trad_effect:0 "Traditionalist opinion will §Gincrease§! by 10.\nReformer opinion will §Rdecrease§! by 5."
+ nazbol_economic_reforms_reform:0 "End the 5 Year Plan"
+ nazbol_economic_reforms_reform_effect:0 "Reformer opinion will §Gincrease§! by 10.\nTraditionalist opinion will §Rdecrease§! by 5."
